@@ -1,0 +1,205 @@
+@import '../../assets/color.scss';
+.videoPage{
+    width: 100%;
+    height: 100%;
+    padding: 94px 40px 0 50px;
+    background-color:$color-primary ;
+    display: flex;
+    justify-content: space-between;
+    &::-webkit-scrollbar{
+        width: 5px;
+        margin-left: 10px;
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: #999;
+        border-radius: 20px;
+    }
+    &::-webkit-scrollbar-track{
+        background-color: transparent;
+    }
+    overflow-y: auto;
+    &__left{
+        width: 72%;
+    }
+    &__right{
+        width: 25%;
+        flex-wrap: wrap;
+
+    }
+}
+.big-video{
+    iframe{
+        width: 100%;
+        height: 400px;
+        border-radius: 14px;
+    }
+    &__title{
+        font-size: 20px;
+        line-height: 20px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    &__statistik{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        p{
+            background-color:rgba(255, 255, 255,.1);
+            border-radius: 20px;
+            padding: 5px 10px;
+            margin-right: 10px;
+            font-size: 12px;
+            line-height: 20px;
+        }
+        border-bottom: 1px solid rgba(216, 216, 216, 0.5);
+        padding-bottom: 20px;
+    }
+    &__views{
+        display: inline-block;
+        font-size: 12px;
+        line-height: 20px;
+        margin-top: 5px;
+        color: #C2C2C2;
+
+    }
+    &__like{
+        margin-left: auto;
+        &::before{
+            content: '';
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            background-image: url('../../imgs/like.png');
+            background-repeat: no-repeat;
+            margin-right: 8px;
+            vertical-align:middle;
+
+            
+        }
+
+    }
+    &__dislike{
+        &::before{
+            content: '';
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            background-image: url('../../imgs/dislike.png');
+            background-repeat: no-repeat;
+            margin-right: 8px;
+            vertical-align:middle;
+        }
+
+    }
+    &__share{
+        &::before{
+            content: '';
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            background-image: url('../../imgs/share.png');
+            background-repeat: no-repeat;
+            margin-right: 8px;
+            vertical-align:middle;
+
+        }
+
+    }
+}
+.points{
+    display: flex;
+    margin-left: 30px;
+    &__item{
+        background-color: #fff;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        &:not(:last-child){
+            margin-right: 5px;
+        }
+    }
+}
+.about-channel{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 30px;
+    &__div{
+        width: 65%;
+    }
+    .subsc{
+        background-color: #ff0000;
+        border-radius: 20px;
+        padding: 5px 10px;
+        margin-left: auto;
+    }
+    &__img{
+        margin-right: 12px;
+    }
+    &__title{
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 28px;
+    }
+    &__date{
+        font-size: 10px;
+        line-height: 14px;
+        opacity: .4;
+        margin-top: 4px;
+
+    }
+    &__text{
+        font-size: 14px;
+        line-height: 18px;
+        opacity: .6;
+        margin-top: 14px;
+    }
+    &__more{
+        font-size: 18px;
+        line-height: 21px;
+        opacity: .4;
+        margin-top: 15px;
+    }
+}
+.theme{
+   
+
+    
+    &__playground{
+        width: 44px;
+        height: 28px;
+        border-radius: 14px;
+        background-color: rgba(255, 255, 255,.1);
+        position: relative;
+    }
+    &__play{
+        width: 24px;
+        height: 24px;
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        top: 2px;
+        left: 0;
+    }
+
+}
+.on{
+    left: 50%;
+}
+.autoplay{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    &__box{
+        display: flex;
+        align-items: center;
+    }
+    &__text{
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-right: 10px;
+            
+    }
+}

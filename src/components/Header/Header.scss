@@ -1,0 +1,55 @@
+@import '../../assets/color.scss';
+.header{
+    width: 100vw;
+    padding: 20px 70px 30px 32px ;
+    width: 100vw;
+    background-color: $color-primary;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    &-form{
+        margin-left: 60px;
+        &__input{
+            width: 300%;
+        background: rgba(235, 235, 235,.1);
+        border-radius: 22px;
+        padding: 12px 0;
+        padding-left: 23px;
+        outline: none;
+        border:none;
+        font-size: 16px;
+        line-height: 20px;
+        color:rgba(255, 255, 255,.4);
+        background-image: url('../../imgs/Search.png');
+        background-repeat: no-repeat;
+        background-position: top 12px right 18px;
+    }
+}
+    &-icons-list{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        &__item{
+            &:not(:last-child){
+                margin-right: 50px;
+            }
+
+        }
+       
+    }
+}
+
+.menu{
+    margin-right: 28px;
+    &__line{
+        width: 20px;
+        height: 3px;
+        background-color: #fff;
+        &:not(:last-child){
+            margin-bottom: 4px;
+        }
+    }
+}

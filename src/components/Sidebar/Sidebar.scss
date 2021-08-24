@@ -1,0 +1,73 @@
+@import '../../assets/color.scss';
+
+.sidebar{
+    background-color: $color-primary;
+    padding: 114px 20px 40px 30px;
+    overflow-y:auto ;
+    height: 100vh;
+    width: 18%;
+    &::-webkit-scrollbar{
+        width: 5px;
+        display: none;
+    }
+    &:hover{
+        &::-webkit-scrollbar{
+            display: block;
+        }
+
+    }
+    &::-webkit-scrollbar-track{
+        background-color:transparent;
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: #999;
+        border-radius: 30%;
+    }
+    &-list{
+       
+        list-style: none;
+        &__item{
+
+        .link{
+           
+            .red{
+                color: rgb(255, 0, 0);
+
+            }
+           
+            }
+            display: flex;
+            align-items: center;
+            &:not(:last-child){
+                margin-bottom: 15px;
+            }
+            &--last{
+                margin-top: 60px;
+            }
+        }
+        &__text{
+            display: inline-block;
+            margin-left: 14px;
+            font-size: 16px;
+            line-height: 20px;
+            color: rgba(255, 255, 255,.5);
+        }
+        
+        
+    &__navlink{
+        text-decoration: none;
+        display: inline-block;
+        margin-left: 10px;
+        font-size: 16px;
+        line-height: 20px;
+        color:$color-secondary;
+        opacity: .5;
+    }
+    }
+    
+    
+}
+.subscriptions{
+    margin-top: 30px;
+    margin-bottom: 25px;
+}

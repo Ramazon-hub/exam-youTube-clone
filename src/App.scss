@@ -1,0 +1,19 @@
+@import './assets/color.scss';
+@import './assets/fonts/fonts.scss';
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: $color-secondary ;
+  font-family: "Mulish",cursive;
+  overflow-x: hidden;
+}
+.app-wrapper{
+  
+}

@@ -1,0 +1,40 @@
+.videos-list{
+    &__item{
+    margin-right: 20px;
+        &__img{
+            width: 175px;
+            height: 110px;
+            border-radius: 20px;
+        
+        }
+        &__about{
+            margin-top: 4px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &__link{
+        text-decoration: none;
+        color:#fff;
+        &__title{
+            margin-top: 5px;
+            font-size: 11px;
+            line-height: 16px;
+        }
+        &__about{
+           
+        }
+    
+        &__text{
+            font-size: 10px;
+            line-height: 14px;
+            opacity: .4;
+        }
+    }
+
+}
+.video{
+   
+   
+   
+}

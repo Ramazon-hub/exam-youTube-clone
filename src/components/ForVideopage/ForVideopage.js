@@ -11,8 +11,8 @@ function ForVideopage(){
                     Videos.filter(e=>{
                         return e.albumId === 10
                     }).map(e=>(
-                        <Link to={`/video/${e.id}`} className="videoPage-list__link">
-                            <li className="videoPage-list__item">
+                        <Link to={`/video/${e.id}`} className="videoPage-list__link" key={e.id}>
+                            <li className="videoPage-list__item" >
                                 <img src={e.url} alt="img"  className="videoPage-list__img"/>
                                 <h3 className="videoPage__title">Baby Monitor Technology</h3>
                                 <div className="videoPage__about">
